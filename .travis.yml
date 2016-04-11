@@ -1,0 +1,11 @@
+language: cpp
+script: make test
+install:
+- gem install fpm
+- gem install package_cloud
+sudo: false
+addons:
+  apt:
+    packages:
+    - rpm
+    - pandoc
