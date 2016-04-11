@@ -13,11 +13,16 @@ function run_test_suite {
   ASSERTIONS=0
   FAILURES=0
   SUCCESSES=0
+  TEST_CASES=0
+
   for testcase in $(declare -f | grep -o "^test[a-zA-Z_]*") ; do
+    type setup 2>&1 | grep -q function && setup
     ${testcase}
+    type tear_down 2>&1 | grep -q function && tear_down
+    TEST_CASES=$((TEST_CASES+1))
   done
 
-  warn "\nTest Result:\n${ASSERTIONS} assertions ran.\n"
+  warn "\nTest Result:\n${TEST_CASES} test cases with ${ASSERTIONS} assertions ran.\n"
   if [[ ${FAILURES} -eq 0 ]]; then
     warn "All tests passed.\n"
     exit 0
