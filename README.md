@@ -29,6 +29,10 @@ function test_one_is_not_two {
 run_test_suite
 ```
 
+### Setup/TearDown
+If you define functions called `setup` or `tear_down`, they will be called
+before and after each test function respectively.
+
 ## Advanced Testing
 Fortunately a lot of people have given unit testing in bash some thoughts in
 the past. So if you want something more than just basic assertions, check
