@@ -1,7 +1,7 @@
 # minibashtest
 
 [![Build Status](https://travis-ci.org/mrtazz/minibashtest.svg?branch=master)](https://travis-ci.org/mrtazz/minibashtest)
-[![Packagecloud](https://img.shields.io/badge/packagecloud-available-green.svg)](https://packagecloud.io/mrtazz/minibashtest)
+[![Packagecloud](https://img.shields.io/badge/packagecloud-available-brightgreen.svg)](https://packagecloud.io/mrtazz/minibashtest)
 [![Code Climate](https://codeclimate.com/github/mrtazz/minibashtest/badges/gpa.svg)](https://codeclimate.com/github/mrtazz/minibashtest)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 
